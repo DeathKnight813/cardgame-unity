@@ -1,0 +1,205 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Game.IData</name>
+    </assembly>
+    <members>
+        <member name="T:Game.IData.INewTroyDataProvider">
+            <summary>
+            troy数据层接口
+            </summary>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.Login(Game.Entity.Troy.ezt_members)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.Register(Game.Entity.Troy.ezt_members,System.String)">
+            <summary>
+            用户注册
+            </summary>
+            <param name="user"></param>
+            <param name="ShopId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.IsAccountsExist(System.String)">
+            <summary>
+            判断用户名是否存在
+            </summary>
+            <param name="accounts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.IsNickNameExist(System.String)">
+            <summary>
+            判断昵称是否存在
+            </summary>
+            <param name="NickName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetMembersByAccounts(System.String)">
+            <summary>
+            获取会员信息
+            </summary>
+            <param name="Account"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetMembersByUserid(System.Int32)">
+            <summary>
+            获取会员信息
+            </summary>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetUserGlobalInfo(System.Int32,System.String)">
+            <summary>
+            获取用户全局信息
+            </summary>
+            <param name="userID"></param>
+            <param name="Accounts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetMembersDayScoreByPid(System.Int32)">
+            <summary>
+            获取会员信息
+            </summary>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetMembersOnlineById(System.String)">
+            <summary>
+            获取会员在线信息
+            </summary>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetNoticeList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取公告列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetNoticeByTitle(System.String)">
+            <summary>
+            获取公告信息
+            </summary>
+            <param name="Title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetNoticeByIdx(System.Int32)">
+            <summary>
+            获取公告实体
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetNoticeByType(System.Int32)">
+            <summary>
+            获取公告实体
+            </summary>
+            <param name="noticeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetOutComeList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取提款列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetDSByAccounts(System.String)">
+            <summary>
+            获取代理信息
+            </summary>
+            <param name="Account"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetOperationTimeByidx(System.Int32)">
+            <summary>
+            获取运营时间信息
+            </summary>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetMailList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取邮件功能列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetMailByidx(System.Int32)">
+            <summary>
+            获取运营时间信息
+            </summary>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GiveMailToBack(Game.Entity.Troy.Mail)">
+            <summary>
+            给后台写邮件
+            </summary>
+            <param name="user"></param>
+            <param name="ShopId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.AddRequest(System.Decimal,System.Int32,System.String)">
+            <summary>
+            申请充值
+            </summary>
+            <param name="ApplyMoney"></param>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.AddWithDraw(System.Decimal,System.Int32,System.String)">
+            <summary>
+            申请提款
+            </summary>
+            <param name="user"></param>
+            <param name="ShopId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.CountHaveRequest(System.String)">
+            <summary>
+            获取充值个数
+            </summary>
+            <param name="intou"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.CountHaveWithDraw(System.String)">
+            <summary>
+            获取提款个数
+            </summary>
+            <param name="intou"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.CountMailNum(System.String)">
+            <summary>
+            获取收件箱个数
+            </summary>
+            <param name="intou"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.IData.INewTroyDataProvider.GetMoneyBackList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取假返钱列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

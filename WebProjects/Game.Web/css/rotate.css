@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ly-plate{
+	position:relative;
+	width:290px;
+	height:280px;
+}
+.rotate-bg{
+	width:290px;
+	height:280px;
+	background:url(../images/ly-plate.png) center no-repeat;
+	position:absolute;
+	top:0;
+	left:0
+}
+.ly-plate div.lottery-star{
+	width:150px;
+	height:150px;
+	position:absolute;
+	top:65px;
+	left:70px;
+	/*text-indent:-999em;
+	overflow:hidden;
+	background:url(rotate-static.png);
+	-webkit-transform:rotate(0deg);*/
+	outline:none
+}
+.ly-plate div.lottery-star #lotteryBtn{
+	cursor: pointer;
+	position: absolute;
+	top:0;
+	left:0;
+	*left:-107px
+}

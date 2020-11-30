@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+.lay01 {
+	background-image: url(img/wbk.png);
+	background-repeat: no-repeat;
+	height: 26px;
+	width: 233px;
+	background-position: center;
+	background-color: #492f15;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.layout {
+	height: 338px;
+	width: 320px;
+	float: left;
+	background-image: url(img/gg.png);
+	background-repeat: no-repeat;
+}

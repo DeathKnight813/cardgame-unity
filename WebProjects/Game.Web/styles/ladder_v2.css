@@ -1,0 +1,261 @@
+﻿.ladder_game_wrap {position:relative; width:749px; border:1px solid #b7a896; border-bottom:none; background:url('../images/bg_ladder_game.png') repeat-y;}
+
+/* 레이아웃 */
+.hd_lgw {position:relative; padding-top:39px; height:97px;}
+.hd_lgw h2 {margin:auto; width:392px; height:65px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat; text-indent:-9999px;}
+.hd_lgw .ic {position:absolute; top:61px; left:75px; width:77px; height:77px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat 0 -70px;}
+.hd_lgw .btn {position:absolute; top:106px; height:24px; text-indent:-9999px; overflow:hidden;}
+.hd_lgw .btn span {display:block; height:24px; background:url('../images/sp_ladder_stats.png?v=140127') no-repeat;}
+.hd_lgw .btn_stats {right:72px; width:93px;}
+.hd_lgw .btn_stats span {background-position:0 -40px;}
+.hd_lgw .btn_stats .on {background-position:0 -70px;}
+.hd_lgw .btn_rank {right:23px; width:49px;}
+.hd_lgw .btn_rank span {background-position:-110px -40px;}
+.hd_lgw .btn_rank .on {background-position:-110px -70px;}
+
+.bd_lgw {padding:0 22px 0 22px;}
+.bd_lgw:after {clear: both; content: ""; display: block;}
+.ft_lgw {position:relative; margin-left:-1px; padding:22px 0 0 27px; width:722px; height:132px; border:1px solid #544b46; background-color:#336666; z-index:100;}
+
+/* 페이징 */
+#paging_wrap {margin:30px 0 30px 0; text-align:center;}
+#paging_wrap .paging {display:inline-block; height:39px;}
+#paging_wrap .paging .num {float:left; margin-right:-1px; padding-left:16px; height:39px; background:url('../images/sp_paging.png') no-repeat;}
+#paging_wrap .paging .num strong {float:left; padding-right:16px; height:39px; line-height:39px; font-family:Verdana, Geneva, sans-serif; font-size:11px; color:#887267; background:url('../images/sp_paging.png') no-repeat right -150px; text-align:center;}
+#paging_wrap .paging .on {position:relative; background-position:0 -300px; z-index:20;}
+#paging_wrap .paging .on strong {color:#fff; background-position:right -350px;}
+#paging_wrap .paging .first {background-position:0 -100px;}
+#paging_wrap .paging .last {margin:0;}
+#paging_wrap .paging a.num:hover {position:relative; background-position:0 -200px; z-index:10;}
+#paging_wrap .paging a.num:hover strong {color:#333; background-position:right -250px;}
+#paging_wrap .paging a.num:active {background-position:0 -300px;}
+#paging_wrap .paging a.num:active strong {background-position:right -350px; color:#fff;}
+#paging_wrap .paging .prev {float:left; margin-right:1px; width:39px; height:39px; text-indent:-999px; overflow:hidden;}
+#paging_wrap .paging .prev em {display:block; width:39px; height:39px; background:url('../images/sp_paging.png') no-repeat -50px -400px;}
+#paging_wrap .paging .prev_first em {background-position:0 -400px;}
+#paging_wrap .paging .next {float:left; margin:0 -1px 0 2px; width:39px; height:39px; text-indent:-999px; overflow:hidden;}
+#paging_wrap .paging .next_last {margin-left:2px;}
+#paging_wrap .paging .next em {display:block; width:39px; height:39px; background:url('../images/sp_paging.png') no-repeat 0 -550px;}
+#paging_wrap .paging .next_last em {background-position:-50px -550px;}
+#paging_wrap .paging a.prev:hover em {background-position:-50px -450px;}
+#paging_wrap .paging a.prev_first:hover em {background-position:0 -450px;}
+#paging_wrap .paging a.prev:active em {background-position:-50px -500px;}
+#paging_wrap .paging a.prev_first:active em {background-position:0 -500px;}
+#paging_wrap .paging a.next:hover em {background-position:0 -600px;}
+#paging_wrap .paging a.next_last:hover em {background-position:-50px -600px;}
+#paging_wrap .paging a.next:active em {background-position:0 -650px;}
+#paging_wrap .paging a.next_last:active em {background-position:-50px -650px;}
+#game_list tr.game_list .game_odds button.usual span {background-position:-560px -380px;}
+#game_list tr.game_list .game_odds button.unusual span {background-position:-560px -410px;}
+
+/* 현재시간 */
+.game_area {position:relative; float:left; margin-bottom:7px; width:528px; height:428px; background:url('../images/bg_game_bx.png') no-repeat;}
+.game_area .time_date {height:57px; line-height:57px; text-align:center; font-weight:bold;}
+
+/* 사다리 게임*/
+.ladder_area {position:relative; margin:30px auto 28px auto; width:209px; height:254px;}
+.ladder_area .start_pos {height:51px;}
+.ladder_area .start_pos span {width:41px; height:42px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat -130px -70px;}
+.ladder_area .start_pos .first {float:left;}
+.ladder_area .start_pos .second {float:right;}
+.ladder_area .start_pos .on {background-position:-180px -70px;}
+.ladder_area .ladder {margin-left:15px;}
+
+.ladder_area ul {position:relative; width:179px; height:161px; background:url('../images/sp_ladder_game_2014_01_10.png?v140317') no-repeat 0 -560px;}
+.ladder_area li {display:none; position:absolute; width:11px; height:11px; background-color:#484848;}
+.ladder_area .first_type1 {background-position:0 -390px;}
+.ladder_area .first_type1 .pos1 {top:0; left:0;}
+.ladder_area .first_type1 .pos2 {top:51px; left:0;}
+.ladder_area .first_type1 .pos3 {top:51px; right:0;}
+.ladder_area .first_type1 .pos4 {top:71px; right:0;}
+.ladder_area .first_type1 .pos5 {top:71px; left:0;}
+.ladder_area .first_type1 .pos6 {top:91px; left:0;}
+.ladder_area .first_type1 .pos7 {top:91px; right:0;}
+.ladder_area .first_type2 {background-position:-200px -390px;}
+.ladder_area .first_type2 .pos1 {top:0; left:0;}
+.ladder_area .first_type2 .pos2 {top:41px; left:0;}
+.ladder_area .first_type2 .pos3 {top:41px; right:0;}
+.ladder_area .first_type2 .pos4 {top:61px; right:0;}
+.ladder_area .first_type2 .pos5 {top:61px; left:0;}
+.ladder_area .first_type2 .pos6 {top:81px; left:0;}
+.ladder_area .first_type2 .pos7 {top:81px; right:0;}
+.ladder_area .first_type2 .pos8 {top:101px; right:0;}
+.ladder_area .first_type2 .pos9 {top:101px; left:0;}
+.ladder_area .second_type1 {background-position:0 -390px;}
+.ladder_area .second_type1 .pos1 {top:0; right:0;}
+.ladder_area .second_type1 .pos2 {top:51px; right:0;}
+.ladder_area .second_type1 .pos3 {top:51px; left:0;}
+.ladder_area .second_type1 .pos4 {top:71px; left:0;}
+.ladder_area .second_type1 .pos5 {top:71px; right:0;}
+.ladder_area .second_type1 .pos6 {top:91px; right:0;}
+.ladder_area .second_type1 .pos7 {top:91px; left:0;}
+.ladder_area .second_type2 {background-position:-200px -390px;}
+.ladder_area .second_type2 .pos1 {top:0; right:0;}
+.ladder_area .second_type2 .pos2 {top:41px; right:0;}
+.ladder_area .second_type2 .pos3 {top:41px; left:0;}
+.ladder_area .second_type2 .pos4 {top:61px; left:0;}
+.ladder_area .second_type2 .pos5 {top:61px; right:0;}
+.ladder_area .second_type2 .pos6 {top:81px; right:0;}
+.ladder_area .second_type2 .pos7 {top:81px; left:0;}
+.ladder_area .second_type2 .pos8 {top:101px; left:0;}
+.ladder_area .second_type2 .pos9 {top:101px; right:0;}
+.ladder_area .result_pos {height:42px;}
+.ladder_area .result_pos span {width:41px; height:42px; line-height:42px; text-align:center; color:#fff; font-weight:bold; font-size:12px; font-family:'굴림',Gulim; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat -230px -70px;}
+.ladder_area .result_pos .bg_even {background-position:-280px -70px;}
+.ladder_area .result_pos .bg_odd {background-position:-500px -70px;}
+.ladder_area .result_pos .odd {float:left;}
+.ladder_area .result_pos .even {float:right;}
+ 
+.ladder_area .ly_ladder_wait {position:absolute; top:59px; left:-104px; padding-top:13px; width:416px; height:111px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat 0 -250px;}
+.ladder_area .ly_ladder_wait .inn {display:table-cell; width:416px; height:111px; vertical-align:middle;}
+.ladder_area .ly_ladder_wait p {margin:5px 0; text-align:center; font-size:12px; font-family:'굴림',Gulim; font-weight:bold; color:#fff;}
+.ladder_area .ly_ladder_wait .before_result {height:14px; line-height:14px; font-family:'돋움',Dotum; font-size:11px; color:#d4af1c; font-weight:normal;}
+.ladder_area .ly_ladder_wait .result {margin-top:15px; height:15px; line-height:15px; color:#d4af1c;}
+.ladder_area .ly_ladder_wait .result .answer {color:#fff;}
+.ladder_area .ly_ladder_wait .notice {margin-top:10px; color:#FF0;}
+.ladder_area .ly_ladder_wait .notice a {color:#ffff00;}
+
+.sound_area {position:absolute; top:22px; right:27px; width:58px; height:20px;}
+.sound_area a {display:block; width:58px; height:20px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat -340px -70px; text-indent:-9999px; overflow:hidden;}
+.sound_area a.on {background-position:-410px -70px;}
+.ladder_tip {height:51px; line-height:51px; text-align:center; color:#918c7a; letter-spacing:-1px;}
+
+/* 지난회차 결과 리스트 */
+.game_result {position:relative; float:right; margin-bottom:7px; padding:24px 7px 0 7px; width:159px; height:404px; background:url('../images/bg_game_bx.png') no-repeat -540px 0;}
+.game_result h3 {margin-bottom:43px; height:15px; line-height:15px; text-align:center; letter-spacing:-2px; font-size:12px; font-family:'굴림',Gulim;}
+.game_result ul {position:relative;width:159px; height:338px; overflow-y:scroll; background:url('../images/bg_game_result_v2.png') repeat-y;} 
+.game_result li {position:relative; height:38px; line-height:33px; text-align:center; background:url('../images/bg_game_result_v2.png') no-repeat;}
+.game_result ul span {clear:left; font-size:12px; font-family:'굴림',Gulim; color:#3b3523;}
+.game_result ul .num {}
+.game_result ul .tx {float:right; width:54px;}
+.game_result .prev span {font-weight:bold; letter-spacing:-1px;}
+.game_result .row_even .tx {margin:5px 13px 0 14px; width:27px; height:27px; text-indent:-9000px; background:url('../images/sprites_ladder_v2.png') no-repeat 0 -40px;}
+.game_result .row_odd .tx {margin:5px 13px 0 14px; width:27px; height:27px; text-indent:-9000px; background:url('../images/sprites_ladder_v2.png') no-repeat -40px -40px;}
+.game_result .ic_arrow {position:absolute; bottom:0; left:0; width:25px; height:25px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat -90px -70px;}
+
+.game_result .bar_per {display:block; position:absolute; left:10px; top:26px; width:72px; height:3px;}
+.game_result .bar_per .bar_odd {display:inline-block; height:3px; line-height:0; border-top:1px solid #287ce4; font-size:0; background:#106de1;}
+.game_result .bar_per .bar_even {position:relative; display:inline-block; height:3px; line-height:0; border-top:1px solid #e42828; font-size:0; background:#e11010;float:right;}
+.game_result .bar_per .point_spot {display:block; position:absolute; left:-4px; top:-4px; width:8px; height:10px; background:url('../images/sprites_ladder_v2.png') no-repeat -80px -40px;}
+
+/* 유저 홀짝 전적 */
+.game_record_area {margin-bottom:24px; clear:both; width:705px; background:url('../images/bg_record_list_top_v4.png') no-repeat;}
+.game_record_area .top {position:relative; padding:12px 12px 0 29px; height:114px;}
+.game_record_area .table_area {padding:0 3px; background:url('../images/bg_record_list_table.png') repeat-y;}
+.game_record_area .line {height:5px; background:url('../images/bg_record_list_table.png') no-repeat -730px 0;}
+
+.game_record_area .mb_info {float:left; padding-right:15px; width:487px;}
+.game_record_area .mb_info dt {float:left;}
+.game_record_area .mb_info dt .user {float:left; margin:6px 0 0 0; height:22px;}
+.game_record_area .mb_info dt .user img {float:left; margin-right:6px;}
+.game_record_area .mb_info dt .user a {float:left; margin-top:3px; height:15px; line-height:15px;}
+.game_record_area .mb_info dt .user span {display:block; max-width:80px; height:14px; line-height:14px; font-size:11px; font-family:'돋움',Dotum; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#fff; letter-spacing:-1px;}
+.game_record_area .mb_info dt .user em {float:left; margin-top:3px; height:15px; line-height:15px; color:#fff; letter-spacing:-1px;}
+.game_record_area .mb_info dd {float:right; margin-top:5px; height:22px; line-height:22px; color:#ffdeaa;}
+.game_record_area .mb_info .bar {float:right; margin:6px 10px 0 10px; width:1px; height:10px; background-color:#aa4c34; text-indent:-9999px;}
+
+.game_record_area .amount_area {position:absolute; top:52px; left:210px; height:25px;}
+.game_record_area .amount_area label {position:relative; float:left; margin-right:-2px; height:25px; cursor:pointer;}
+.game_record_area .amount_area span {display:block; height:25px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat; text-indent:-9999px;}
+.game_record_area .amount_area .amount1 {width:67px; background-position:-400px -390px;}
+.game_record_area .amount_area .amount2 {width:72px; background-position:-400px -420px;}
+.game_record_area .amount_area .amount3 {width:76px; background-position:-400px -450px;}
+.game_record_area .amount_area .amount4 {width:86px; background-position:-400px -480px;}
+.game_record_area .amount_area .on .amount1 {background-position:-490px -390px;}
+.game_record_area .amount_area .on .amount2 {background-position:-490px -420px;}
+.game_record_area .amount_area .on .amount3 {background-position:-490px -450px;}
+.game_record_area .amount_area .on .amount4 {background-position:-490px -480px;}
+.game_record_area .amount_area .free_pass {top:-17px; left:50%; margin-left:-34px; position:absolute; width:68px; height:24px; background:url('../images/sp_ladder_game_2014_01_10.png?v=140212') no-repeat -590px -390px;}
+.game_record_area .amount_area .free_pass em {float:right; margin:4px 6px 0 0; width:11px; height:11px; line-height:11px; font-family:Tahoma, Geneva, sans-serif; font-size:9px; color:#ffff00; text-indent:0; text-align:center; font-weight:bold;}
+.game_record_area .login_meg {position:absolute; top:23px; left:24px; width:497px; height:52px; background-color:#a0381d;}
+.game_record_area .login_meg p {margin:20px auto 0 auto; width:255px; height:13px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat -180px -120px; text-indent:-9999px;}
+.game_record_area .btn_area {float:right; height:76px;}
+.game_record_area .btn_area #btnodd {float:left; width:76px; height:76px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat; text-indent:-9999px;}
+.game_record_area .btn_area #btneven {float:left; width:76px; height:76px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat; text-indent:-9999px;}
+.game_record_area .btn_area #btnodd.odd {margin-right:4px; background-position:0 -160px;}
+.game_record_area .btn_area #btnodd.odd:hover {background-position:-240px -160px;}
+.game_record_area .btn_area #btnodd.odd:active {background-position:-480px -160px;}
+.game_record_area .btn_area #btneven.even {background-position:-120px -160px;}
+.game_record_area .btn_area #btneven.even:hover {background-position:-360px -160px;}
+.game_record_area .btn_area #btneven.even:active {background-position:-600px -160px;}
+
+.game_record_area table {width:100%; border:none;}
+.game_record_area table tr {border-top:1px solid #dcdddc;}
+.game_record_area table td {border:none;}
+.game_record_area table td .tinn {height:37px; line-height:37px; color:#666; text-align:center; background-color:#f7f0e0; font-size:11px; font-family:'돋움',Dotum;}
+.game_record_area table td.odd_even .tinn,
+.game_record_area table td.result .tinn {font-size:12px; font-family:'굴림',Gulim; color:#999;}
+.game_record_area table td.amount .tinn {display:table-cell; padding-right:10px; width:110px; line-height:14px; text-align:right; vertical-align:middle;}
+.game_record_area table td.amount span {display:block; height:14px;}
+.game_record_area table td.amount .free_pass {color:#1c8822;}
+.game_record_area table td.amount .free_pass em {letter-spacing:-1px;}
+.game_record_area table td.win_amount .tinn {padding-right:10px; text-align:right;}
+.game_record_area table .crr td.result .tinn {color:#e30f0f;}
+.game_record_area table td.odd_even .tinn .col_odd {color:#106de1;}
+.game_record_area table td.odd_even .tinn .col_even {color:#e11010;}
+.game_record_area table tr.first {border-top:none;}
+.game_record_area table tr.first .tinn {background:none;}
+.game_record_area table tr.none_list .tinn {margin-top:30px; height:60px;}
+.game_record_area table tr.none_list p {margin:20px 0; height:30px; background-color:#F00;}
+
+/* tip */
+.tip_area dt {margin-bottom:12px; width:75px; height:15px; background:url('../images/sp_ladder_game_2014_01_10.png') no-repeat -90px -120px; text-indent:-9999px;}
+.tip_area dd {margin-bottom:2px; height:14px; line-height:14px; color:#b8b0ae; font-size:11px; font-family:'돋움',Dotum; letter-spacing:-1px;}
+.tip_area dd .dot {float:left; margin:6px 7px 0 2px; width:2px; height:2px; background-color:#877e79;}
+
+/* 홀짝 통계 */
+.lgs_view {position:absolute; top:130px; left:24px; width:695px; border:3px solid #000; z-index:50;}
+.lgs_view .inner {padding:19px 9px 0px 9px; border:1px solid #fff; background-color:#fcfcfc;}
+.lgs_hd {margin-bottom:19px; height:16px;}
+.lgs_hd span {float:left; background:url('../images/sp_ladder_stats.png?v=140127') no-repeat; text-indent:-9999px;}
+.lgs_hd .tit {margin:0px 9px 0 20px; width:129px; height:16px; background-position:0 0;}
+.lgs_hd .tx {margin-top:2px; width:189px; height:11px; background-position:0 -20px;}
+.lgs_bd {position:relative; padding-bottom:5px; width:675px;}
+.lgs_bd .loading {position:absolute; top:50%; left:50%; margin:-14px 0 0 -14px; z-index:10;}
+.lgs_bd table {border:none; border-bottom:1px solid #cacaca;}
+.lgs_bd table th {font-weight:normal;}
+.lgs_bd table th.odd {color:#106de0;}
+.lgs_bd table th.even {color:#e01010;}
+.lgs_bd table tr.hd {border-top:1px solid #8f8f8f; border-bottom:1px solid #dedede;}
+.lgs_bd table th .inn {border-right:1px solid #dedede; background-color:#efefef; width:31px; height:31px;  line-height:31px;}
+.lgs_bd table th.first .inn {border-left:1px solid #dedede;}
+.lgs_bd table tr {border-top:1px solid #eaeaea;}
+.lgs_bd table td .inn {width:31px; height:31px; border-right:1px solid #eaeaea;}
+.lgs_bd table td.first .inn {border-left:1px solid #eaeaea;}
+.lgs_bd table td .inn .mark {float:left; margin:6px 0 0 6px; width:19px; height:19px; background:url('../images/sp_ladder_stats.png?v=140127') no-repeat -9999px 0;}
+.lgs_bd table td.odd .mark {background-position:0 -100px;}
+.lgs_bd table td.even .mark {background-position: -30px -100px;}
+.lgs_bd table .mark .num {display:block; width:19px; height:19px; line-height:18px; font-size:9px; color:#fff; font-family:Tahoma, Geneva, sans-serif; text-align:center;}
+.lgs_view a.btn_close {position:absolute; top:-3px; right:-3px; display:block; width:37px; height:37px; background:url('../images/sp_ladder_stats.png?v=140127') no-repeat -60px -100px;}
+
+/* 랭킹 */
+.lgr_bd {position:relative;}
+.lgr_bd .loading {position:absolute; top:50%; left:50%; margin:-14px 0 0 -14px;}
+.lgr_view {position:absolute; top:130px; right:24px; width:454px; border:3px solid #000; z-index:50;}
+.lgr_view .inner {padding:19px 9px 0px 9px; height:430px; border:1px solid #fff; background-color:#fcfcfc;}
+.lgr_hd {margin-bottom:19px; height:16px;}
+.lgr_hd span {float:left; background:url('../images/sp_ladder_stats.png?v=140127') no-repeat; text-indent:-9999px;}
+.lgr_hd .tit {margin:0px 9px 0 20px; width:120px; height:16px; background-position:0 -180px;}
+.lgr_hd .tx {margin-top:2px; width:104px; height:11px; background-position:0 -200px;}
+.lgr_view a.btn_close {position:absolute; top:-3px; right:-3px; display:block; width:37px; height:37px; background:url('../images/sp_ladder_stats.png?v=140127') no-repeat -60px -100px;}
+
+/* 분포도 */
+.chart_wrap {position:relative;}
+.chart_wrap .title_chart {display:block; position:absolute; left:50%; top:-21px; margin-left:-57px; width:114px; height:21px; line-height:22px; text-align:center; letter-spacing:-1px; font-family:'돋움',Dotum; font-size:11px; color:#dcdbd9; background:url('../images/sprites_ladder_v2.png') no-repeat -100px -40px;}
+.chart_wrap .tip_chart {margin-top:9px; text-align:center; letter-spacing:-1px; font-family:'돋움',Dotum; font-size:11px; color:#7e796a;}
+.this_times_chart {margin-left:7px; width:514px; height:18px; background:url('../images/sprites_ladder_v2.png') no-repeat 0 0;}
+.this_times_chart .graph_odd_area {position:relative; float:left; margin-left:1px; width:200px; height:19px;}
+.this_times_chart .graph_even_area {position:relative; float:right; margin-right:1px; width:200px; height:19px;}
+.this_times_chart .graph_area span {line-height:17px; font-family:tahoma; font-size:9px; color:#fff;}
+.this_times_chart .vs_area {position:absolute; left:50%; top:-5px; margin-left:-58px; width:116px; height:26px; background:url('../images/sprites_ladder_v2.png') no-repeat -220px -40px; z-index:10;}
+#graph_odd {display:block; position:absolute; right:0; top:0; height:19px; text-align:right; background:url('../images/sprites_ladder_v2.png') no-repeat 0 -20px;}
+#graph_even {display:block; position:absolute; left:0; top:0; height:19px; text-align:left; text-indent:20px; background:url('../images/sprites_ladder_v2.png') no-repeat right -20px;}
+
+.this_times_chart .txt_per {margin-top:8px; width:42px; height:11px; line-height:11px; text-align:center; font-family:tahoma; font-size:9px;}
+.this_times_chart .ico_vs {display:none;}
+#txt_odd_per {float:left; margin-left:2px; color:#1a6ed6;}
+#txt_even_per {float:right; margin-right:2px; color:#d61a1a;}
+
+/* 장애 메세지 */
+#error_meg {position:absolute; padding:159px 0 0 56px; width:472px; height:269px; background:url('../images/bg_error_meg.png'); z-index:100;}
+#error_meg p {display:table-cell; width:414px; height:109px; line-height:30px; border:1px solid #cbcbcb; background-color:#e1e1e1; font-size:12px; font-family:'굴림',Gulim; text-align:center; vertical-align:middle; font-weight:bold; color:#333;}

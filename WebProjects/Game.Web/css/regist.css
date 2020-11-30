@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,html{ margin:0px; padding:0px; width:100%;}
+ul{ margin:0px; padding:0px}
+li{ text-align:center; list-style:none;}
+#container{ width:1160px; margin:auto; }
+#header{ width:1148px; height:100px; padding-top:10px; margin:4px; border-bottom:#92c0ea 1px solid;}
+#header #logo{ float:left;}
+#header #menu{ float:left; margin:30px 0px 30px 10px; width:844px; height:40px; background-color:#4a6acd; position:relative;}
+#menu li{ float:left;}
+#menu .t_sel{ width:167px; height:40px; font-size:18px; color:#FFF; line-height:40px; font-weight:bold; cursor:pointer;}
+#menu .t_sel:hover{ background-color:#6babe5;}
+#menu .sel_li{ background-color:#6babe5;}
+
+
+#regist{ width:800px; margin:0px auto; margin-top:30px; border:#92c0ea 1px solid; background-color:#eff4ff}
+#regist .reg_tit{ border-bottom:#92c0ea 1px solid; color:#06F; height:40px; line-height:40px; font-weight:bold; text-indent:20px; background-color:#bed8ff;}
+#regist td{ height:45px; line-height:45px; padding-left:10px;}
+#regist tr td:first-child{ text-align:right;}
+#regist tr td:nth-child(3){ color:#F00;}
+#regist .cztk_text{ width:150px;}
+#regist td span{ color:#F00;font-size: 12px;}
+
+.btn_style{ background-color:#4a6acd; width:80px; height:30px; font-size:14px; margin:20px 10px; color:#FFF; border:none;}

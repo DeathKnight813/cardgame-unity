@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ly-plate{
+	position:relative;
+	width:250px;
+	height:250px;
+}
+.rotate-bg{
+	width:250px;
+	height:250px;
+	position:absolute;
+	top:0;
+	left:0
+}
+.ly-plate div.lottery-star{
+	width:150px;
+	height:150px;
+	position:absolute;
+	outline:none
+}
+.ly-plate div.lottery-star #lotteryBtn{
+	cursor: pointer;
+	position: absolute;
+	top:0;
+	left:0;
+	*left:-107px
+}

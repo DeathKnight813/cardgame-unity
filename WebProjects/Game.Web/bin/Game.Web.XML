@@ -1,0 +1,904 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Game.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Game.Web.AddMail.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            页面加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Game.Web.AddMail.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="M:Game.Web.AddMail.btnsure_Click(System.Object,System.EventArgs)">
+            <summary>
+            发送成功 발송성공!
+            发送失败  발송실패!
+            内容不能为空  내용을 비워 둘수 없습니다!
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Game.Web.AddMail.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.AddMail.txtContent">
+            <summary>
+            txtContent 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.AddMail.btnsure">
+            <summary>
+            btnsure 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Agreement.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:Game.Web.EventDetail.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            页面加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Game.Web.EventDetail.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="F:Game.Web.EventDetail.form1">
+            <summary>
+            form1 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.EventDetail.lbContent">
+            <summary>
+            lbContent 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="M:Game.Web.EventList.AddHeaderTitle">
+            <summary>
+            增加页面标题Title
+            </summary>
+        </member>
+        <member name="M:Game.Web.EventList.BindNewsData">
+            <summary>
+            绑定新闻
+            </summary>
+        </member>
+        <member name="P:Game.Web.EventList.SearchItems">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="P:Game.Web.EventList.Orderby">
+            <summary>
+            排序条件
+            </summary>
+        </member>
+        <member name="F:Game.Web.EventList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.EventList.rptNewsList">
+            <summary>
+            rptNewsList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.EventList.anpPage">
+            <summary>
+            anpPage 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:Game.Web.GameInt.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="F:Game.Web.GameInt.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:Game.Web.MailDetail.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            页面加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Game.Web.MailDetail.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="F:Game.Web.MailDetail.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.MailDetail.lbContent">
+            <summary>
+            lbContent 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:Game.Web.MailFunction.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="M:Game.Web.MailFunction.BindNewsData">
+            <summary>
+            绑定邮件
+            </summary>
+        </member>
+        <member name="P:Game.Web.MailFunction.SearchItems">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="P:Game.Web.MailFunction.Orderby">
+            <summary>
+            排序条件
+            </summary>
+        </member>
+        <member name="F:Game.Web.MailFunction.form1">
+            <summary>
+            form1 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.MailFunction.rptNewsList">
+            <summary>
+            rptNewsList 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.MailFunction.anpPage">
+            <summary>
+            anpPage 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="M:Game.Web.Main.btnlogin_Click(System.Object,System.EventArgs)">
+            <summary>
+            登录
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Game.Web.Main.UserLongout">
+            <summary>
+            退出
+            </summary>
+        </member>
+        <member name="M:Game.Web.Main.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="M:Game.Web.Main.BindWithDrawData">
+            <summary>
+            绑定提款
+            </summary>
+        </member>
+        <member name="P:Game.Web.Main.WhereItem">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="P:Game.Web.Main.Sortby">
+            <summary>
+            排序条件
+            </summary>
+        </member>
+        <member name="M:Game.Web.Main.BindMoneyBackData">
+            <summary>
+            绑定假返钱
+            </summary>
+        </member>
+        <member name="F:Game.Web.Main.Form1">
+            <summary>
+            Form1 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Main.txtAccounts">
+            <summary>
+            txtAccounts 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Main.txtLogonPass">
+            <summary>
+            txtLogonPass 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Main.btnlogin">
+            <summary>
+            btnlogin 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Main.ltAccount">
+            <summary>
+            ltAccount 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Main.ltNickName">
+            <summary>
+            ltNickName 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Main.repmoney">
+            <summary>
+            repmoney 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Main.repbackmoney">
+            <summary>
+            repbackmoney 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="M:Game.Web.NewsDetail.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            页面加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Game.Web.NewsDetail.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="F:Game.Web.NewsDetail.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.NewsDetail.lbContent">
+            <summary>
+            lbContent 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:Game.Web.NoticeList.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="M:Game.Web.NoticeList.BindNewsData">
+            <summary>
+            绑定新闻
+            </summary>
+        </member>
+        <member name="P:Game.Web.NoticeList.SearchItems">
+            <summary>
+            查询条件
+            </summary>
+        </member>
+        <member name="P:Game.Web.NoticeList.Orderby">
+            <summary>
+            排序条件
+            </summary>
+        </member>
+        <member name="F:Game.Web.NoticeList.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.NoticeList.rptNewsList">
+            <summary>
+            rptNewsList 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.NoticeList.anpPage">
+            <summary>
+            anpPage 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.PrivacyPolicy.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:Game.Web.Register.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="F:Game.Web.Register.form1">
+            <summary>
+            form1 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtAccounts">
+            <summary>
+            txtAccounts 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtLogonPass">
+            <summary>
+            txtLogonPass 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtLogonPass2">
+            <summary>
+            txtLogonPass2 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtNickname">
+            <summary>
+            txtNickname 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtRegisterMobile">
+            <summary>
+            txtRegisterMobile 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtBankName">
+            <summary>
+            txtBankName 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtBankAcccount">
+            <summary>
+            txtBankAcccount 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtBankAcowner">
+            <summary>
+            txtBankAcowner 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtInsurePass1">
+            <summary>
+            txtInsurePass1 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtInsurePass2">
+            <summary>
+            txtInsurePass2 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.txtUpmemberPID">
+            <summary>
+            txtUpmemberPID 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Register.btnAdd">
+            <summary>
+            btnAdd 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="M:Game.Web.Request.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            页面加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Game.Web.Request.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="F:Game.Web.Request.form1">
+            <summary>
+            form1 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.labaccount">
+            <summary>
+            labaccount 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.txtmoney">
+            <summary>
+            txtmoney 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.txtBankAccount">
+            <summary>
+            txtBankAccount 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.btnOne">
+            <summary>
+            btnOne 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.btnTwo">
+            <summary>
+            btnTwo 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.btnFive">
+            <summary>
+            btnFive 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.btnTen">
+            <summary>
+            btnTen 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.btnclear">
+            <summary>
+            btnclear 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.btnTwenty">
+            <summary>
+            btnTwenty 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.btnThirty">
+            <summary>
+            btnThirty 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.btnFifty">
+            <summary>
+            btnFifty 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.btnHundred">
+            <summary>
+            btnHundred 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.Request.btnsure">
+            <summary>
+            btnsure 컨트롤입니다.
+            </summary>
+            <remarks>
+            자동 생성 필드입니다.
+            수정하려면 디자이너 파일에서 코드 숨김 파일로 필드 선언을 이동하십시오.
+            </remarks>
+        </member>
+        <member name="F:Game.Web.UtilizationLimitPolicy.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.UtilizationPolicy.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="M:Game.Web.WithDraw.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            页面加载
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Game.Web.WithDraw.AddHeaderTitle">
+            <summary>
+            增加页面标题
+            </summary>
+        </member>
+        <member name="F:Game.Web.WithDraw.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.labaccount">
+            <summary>
+            labaccount 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.labnowmoney">
+            <summary>
+            labnowmoney 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.txtmoney">
+            <summary>
+            txtmoney 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.btnOne">
+            <summary>
+            btnOne 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.btnTwo">
+            <summary>
+            btnTwo 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.btnFive">
+            <summary>
+            btnFive 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.btnTen">
+            <summary>
+            btnTen 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.btnclear">
+            <summary>
+            btnclear 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.btnTwenty">
+            <summary>
+            btnTwenty 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.btnThirty">
+            <summary>
+            btnThirty 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.btnFifty">
+            <summary>
+            btnFifty 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.btnHundred">
+            <summary>
+            btnHundred 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.txtWithdrawalsPass">
+            <summary>
+            txtWithdrawalsPass 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.WithDraw.btnsure">
+            <summary>
+            btnsure 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="T:Game.Web.WS.WSAccount">
+            <summary>
+            WSAccount 的摘要说明
+            </summary>
+        </member>
+        <member name="M:Game.Web.WS.WSAccount.Logon(System.String,System.String)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="userName"></param>
+            <param name="userPass"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Web.WS.WSAccount.GetUserInfo">
+            <summary>
+            获取用户登录信息
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Web.WS.WSAccount.CheckName(System.String)">
+            <summary>
+            检测用户名
+            </summary>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Web.WS.WSAccount.CheckNickName(System.String)">
+            <summary>
+            检测昵称
+            </summary>
+            <param name="NickName"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Game.Web.YouthProtecPolicy.Head1">
+            <summary>
+            Head1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+        <member name="F:Game.Web.YouthProtecPolicy.form1">
+            <summary>
+            form1 控件。
+            </summary>
+            <remarks>
+            自动生成的字段。
+            若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+            </remarks>
+        </member>
+    </members>
+</doc>

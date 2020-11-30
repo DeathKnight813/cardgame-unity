@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Game.Data</name>
+    </assembly>
+    <members>
+        <member name="T:Game.Data.Factory.ClassFactory">
+            <summary>
+            数据访问创建工厂
+            </summary>
+        </member>
+        <member name="M:Game.Data.Factory.ClassFactory.GetINewTroyDataProvider">
+            <summary>
+            创建后台库对象实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.Factory.ClassFactory.GetINewTroyDataProvider2">
+            <summary>
+            创建后台库对象实例
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.#ctor(System.String)">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.Login(Game.Entity.Troy.ezt_members)">
+            <summary>
+            用户登录
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.Register(Game.Entity.Troy.ezt_members,System.String)">
+            <summary>
+            用户注册
+            </summary>
+            <param name="user"></param>
+            <param name="ShopId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.IsAccountsExist(System.String)">
+            <summary>
+            判断用户名是否存在
+            </summary>
+            <param name="accounts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.IsNickNameExist(System.String)">
+            <summary>
+            判断昵称是否存在
+            </summary>
+            <param name="NickName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetMembersByAccounts(System.String)">
+            <summary>
+            获取会员信息
+            </summary>
+            <param name="Account"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetMembersByUserid(System.Int32)">
+            <summary>
+            获取会员信息
+            </summary>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetUserGlobalInfo(System.Int32,System.String)">
+            <summary>
+            获取用户全局信息
+            </summary>
+            <param name="userID"></param>
+            <param name="Accounts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetMembersDayScoreByPid(System.Int32)">
+            <summary>
+            获取会员信息
+            </summary>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetMembersOnlineById(System.String)">
+            <summary>
+            获取会员在线信息
+            </summary>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetNoticeList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取公告列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetNoticeByTitle(System.String)">
+            <summary>
+            获取公告信息
+            </summary>
+            <param name="Title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetNoticeByIdx(System.Int32)">
+            <summary>
+            获取公告实体
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetNoticeByType(System.Int32)">
+            <summary>
+            获取公告实体
+            </summary>
+            <param name="noticeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetOutComeList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取提款列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetDSByAccounts(System.String)">
+            <summary>
+            获取代理信息
+            </summary>
+            <param name="Account"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetOperationTimeByidx(System.Int32)">
+            <summary>
+            获取运营时间信息
+            </summary>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetMailList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取邮件功能列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetMailByidx(System.Int32)">
+            <summary>
+            获取运营时间信息
+            </summary>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GiveMailToBack(Game.Entity.Troy.Mail)">
+            <summary>
+            给后台写邮件
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.AddRequest(System.Decimal,System.Int32,System.String)">
+            <summary>
+            申请充值
+            </summary>
+            <param name="ApplyMoney"></param>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.AddWithDraw(System.Decimal,System.Int32,System.String)">
+            <summary>
+            申请提款
+            </summary>
+            <param name="ApplyMoney"></param>
+            <param name="pid"></param>
+            <param name="withdraw"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.CountHaveRequest(System.String)">
+            <summary>
+            获取充值个数
+            </summary>
+            <param name="intou"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.CountHaveWithDraw(System.String)">
+            <summary>
+            获取提款个数
+            </summary>
+            <param name="intou"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.CountMailNum(System.String)">
+            <summary>
+            获取收件箱个数
+            </summary>
+            <param name="intou"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Data.NewTroyDataProvider.GetMoneyBackList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取假返钱列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

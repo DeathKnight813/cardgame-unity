@@ -1,0 +1,617 @@
+﻿
+body {
+    font-size: 14px;
+}
+
+div {
+    margin: 0 auto;
+    border: 0px;
+}
+
+img {
+    border: 0px;
+}
+
+.floatRight {
+    float: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+
+
+.header {
+    padding: 15px 0px;
+    height: 70px;
+}
+
+    .header .content {
+        width: 1200px;
+    }
+
+    .header .logo {
+        float: left;
+        display: inline-block;
+        width: 230px;
+    }
+
+        .header .logo img {
+            width: 230px;
+        }
+
+    .header .menu {
+        float: right;
+        display: inline-block;
+    }
+
+        .header .menu .item {
+            padding: 35px 15px 0px 15px;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .header .menu a {
+            color: #919CA4;
+            font-weight: 700;
+        }
+
+            .header .menu a:hover {
+                color: #2f3337;
+            }
+
+        .header .menu .itembg1 {
+            background: top center no-repeat url(/content/images/menu_1.jpg);
+        }
+
+            .header .menu .itembg1:hover {
+                background: top center no-repeat url(/content/images/menu_1_b.jpg);
+            }
+
+        .header .menu .item-this1 {
+            background: top center no-repeat url(/content/images/menu_1_b.jpg) !important;
+        }
+
+        .header .menu .itembg2 {
+            background: top center no-repeat url(/content/images/menu_2.jpg);
+        }
+
+            .header .menu .itembg2:hover {
+                background: top center no-repeat url(/content/images/menu_2_b.jpg);
+            }
+
+        .header .menu .item-this2 {
+            background: top center no-repeat url(/content/images/menu_2_b.jpg) !important;
+        }
+
+        .header .menu .itembg3 {
+            background: top center no-repeat url(/content/images/menu_3.jpg);
+        }
+
+            .header .menu .itembg3:hover {
+                background: top center no-repeat url(/content/images/menu_3_b.jpg);
+            }
+
+        .header .menu .item-this3 {
+            background: top center no-repeat url(/content/images/menu_3_b.jpg) !important;
+        }
+
+
+
+        .header .menu .itembg4 {
+            background: top center no-repeat url(/content/images/menu_4.jpg);
+        }
+
+            .header .menu .itembg4:hover {
+                background: top center no-repeat url(/content/images/menu_4_b.jpg);
+            }
+
+        .header .menu .item-this4 {
+            background: top center no-repeat url(/content/images/menu_4_b.jpg) !important;
+        }
+
+
+        .header .menu .itembg5 {
+            background: top center no-repeat url(/content/images/menu_5.jpg);
+        }
+
+            .header .menu .itembg5:hover {
+                background: top center no-repeat url(/content/images/menu_5_b.jpg);
+            }
+
+        .header .menu .item-this5 {
+            background: top center no-repeat url(/content/images/menu_5_b.jpg) !important;
+        }
+
+        .header .menu .itemSplit {
+            display: inline-block;
+            height: 20px;
+            margin-bottom: 20px;
+            vertical-align: middle;
+            border-left: 2px solid #ebecef;
+        }
+
+.main {
+    box-shadow: 0px 2px 10PX 0px #ccc inset;
+    padding: 20px 0px;
+    background: #F7F7F5;
+}
+
+    .main .content {
+        width: 1200px;
+        margin: 0 auto;
+        height: 350px;
+    }
+
+        .main .content .divUserData {
+            width: 290px;
+            min-height: 250px;
+        }
+
+        .main .content .login {
+            background: #FFF;
+            width: 190px;
+            height: 320px;
+            margin: 5px 15px 5px 5px;
+            padding: 9px;
+            display: inline-block;
+            color: #333;
+            border: 1px solid #D9D9D9;
+        }
+
+            .main .content .login .layui-form-label {
+                width: 60px !important;
+                padding: 9px 10px;
+            }
+
+            .main .content .login .bottomDiv {
+                height: 28px;
+                line-height: 28px;
+            }
+
+            .main .content .login .log_btn {
+                width: 100%;
+                margin-top: 10px;
+                background: #248fbd;
+            }
+
+                .main .content .login .log_btn:hover {
+                    background: #32ACDE;
+                }
+
+
+            .main .content .login .reg_btn {
+                padding: 0px 10px;
+                line-height: unset;
+                height: unset;
+                background: #8f979f;
+            }
+
+                .main .content .login .reg_btn:hover {
+                    background: #AFB0B2;
+                }
+
+            .main .content .login .logo {
+                padding: 15px;
+                text-align: center;
+            }
+
+            .main .content .login .layui-form-checked[lay-skin=primary] i {
+                border-color: #248FBD;
+                background-color: #248FBD;
+                color: #FFF;
+            }
+
+            .main .content .login .layui-form-checkbox[lay-skin=primary]:hover i {
+                border-color: #248FBD;
+                color: #FFF;
+            }
+
+
+        .main .content .banner {
+            width: 700px;
+            height: 340px;
+            margin: 5px 0px;
+            display: inline-block;
+        }
+
+            .main .content .banner img {
+                width: 700px;
+                height: 340px;
+            }
+
+
+        .main .content .Events {
+            width: 250px;
+            height: 340px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            background: 10px 10px url(/content/images/event_bg.jpg) #FFF no-repeat;
+            display: inline-block;
+            border: 1px solid #D9D9D9;
+        }
+
+            .main .content .Events .eventInfo {
+                margin-top: 100px;
+                margin-bottom: 20px;
+                width: 250px;
+                height: 220px;
+                overflow: hidden;
+            }
+
+            .main .content .Events .info {
+                margin: 100px 20px 10px 20px;
+            }
+
+
+        .main .content .data {
+            width: 350px;
+            height: 340px;
+            margin: 10px 5px;
+            display: inline-block;
+            background: url(/content/images/rolltext_bg.jpg) no-repeat;
+            overflow: hidden;
+        }
+
+        .main .content .data1 {
+            width: 350px;
+            height: 340px;
+            margin: 10px 5px;
+            display: inline-block;
+            background: url(/content/images/rolltext_bg2.jpg) no-repeat;
+            overflow: hidden;
+        }
+
+
+            .main .content .data1 .title {
+                padding: 8px 0px;
+                text-align: center;
+                color: #FFF;
+                font-size: 18px;
+                height: 65px;
+            }
+
+            .main .content .data1 .datacontent {
+                margin-top: 10px;
+                height: 250px;
+                overflow: hidden;
+            }
+
+        .main .content .data .title {
+            padding: 8px 10px;
+            text-align: center;
+            color: #FFF;
+            font-size: 16px;
+        }
+
+        .main .content .data .menu {
+            text-align: center;
+            color: #2d2d3e;
+            background: #9dcfd9;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+        }
+
+            .main .content .data .menu .item {
+                display: inline-block;
+                padding: 0px 10px;
+                margin: 5px 0px;
+            }
+
+        .main .content .data .datacontent {
+            margin-top: 10px;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .main .content .data .data-item {
+            text-align: center;
+            line-height: 30px;
+            color: #585866;
+            border-bottom: 1px solid #bdbdbd;
+        }
+
+
+        .main .content .accordion {
+            width: 250px;
+            height: 340px;
+            margin: 10px 0px 0px 5px;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+            .main .content .accordion .row1 {
+                background: #248fbd;
+                color: #FFF;
+                text-align: center;
+                line-height: 40px;
+            }
+
+            .main .content .accordion .row2 {
+                background: #dcaa10;
+                color: #FFF;
+                text-align: center;
+                line-height: 40px;
+            }
+
+            .main .content .accordion .row3 {
+                background: #21b8ad;
+                color: #FFF;
+                text-align: center;
+                line-height: 40px;
+            }
+
+            .main .content .accordion .pp img {
+                width: 100%;
+                height: 100%;
+            }
+
+    .main .list {
+        width: 1200px;
+        margin: 0 auto;
+        background: url(/content/images/div_bg.jpg) #FFF no-repeat;
+    }
+
+        .main .list .menu {
+            font-size: 18px;
+            color: #FFF;
+            line-height: 50px;
+            margin-left: 50px;
+        }
+
+            .main .list .menu a {
+                color: #FFF;
+            }
+
+        .main .list .content {
+            margin-top: 80px;
+        }
+
+        .main .list .datalist {
+            line-height: 40px;
+            width: 900px;
+            padding-top: 50px;
+            margin: 0px 10px;
+            display: inline-block;
+        }
+
+            .main .list .datalist .layui-form-label {
+                width: 100px !important;
+            }
+
+            .main .list .datalist .layui-input-block {
+                margin-left: 130px;
+            }
+
+            .main .list .datalist .detail .title {
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .main .list .datalist .detail .time {
+                color: #333;
+                text-align: center;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #aeb4b5;
+            }
+
+        .main .list .event-item {
+            width: 820px;
+            margin: 0px 30px;
+            border-bottom: 1px solid #eee;
+            display: inline-block;
+        }
+
+            .main .list .event-item .title, .main .list .event-item .title a {
+                padding-left: 10px;
+                color: #000;
+            }
+
+            .main .list .event-item .time {
+                color: #6e6e81;
+                text-align: right;
+                padding-right: 10px;
+            }
+
+
+        .main .list .datalist .pager {
+            text-align: center;
+        }
+
+#anpPage {
+    width: 60% !important;
+    line-height: 40px;
+    height: 40px;
+}
+
+    #anpPage a {
+        border: 1px solid #d9d9d9;
+        background: #f8f8f8;
+        padding: 5px 10px;
+        color: #333 !important;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+
+    #anpPage span {
+        border: 1px solid #248fbd;
+        background: #248fbd;
+        padding: 5px 10px;
+        color: #FFF !important;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+
+.main .list .download {
+    margin-left: 30px;
+    margin-top: 100px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+    .main .list .download a {
+        width: 210px;
+        height: 76px;
+        margin-bottom: 10px;
+    }
+
+
+.main .download {
+    width: 210px;
+    height: 340px;
+    margin: 10px 10px 0px 5px;
+    display: inline-block;
+}
+
+
+    .main .download a {
+        display: block;
+        width: 210px;
+        height: 76px;
+        margin-bottom: 12px;
+    }
+
+    .main .download .down1 {
+        background: url(../images/PC-button.jpg) no-repeat;
+    }
+
+        .main .download .down1:hover {
+            background: url(../images/PC-button_o.jpg) no-repeat;
+        }
+
+    .main .download .down2 {
+        background: url(../images/andr_button.jpg) no-repeat;
+    }
+
+    .main .download .down2 {
+        background: url(../images/andr_button_o.jpg) no-repeat;
+    }
+
+    .main .download .down3 {
+        background: url(../images/team_button.jpg) no-repeat;
+    }
+
+        .main .download .down3:hover {
+            background: url(../images/team_button_o.jpg) no-repeat;
+        }
+
+    .main .download .down4 {
+        background: url(../images/time.jpg) no-repeat;
+    }
+
+        .main .download .down4:hover {
+            background: url(../images/time.jpg) no-repeat;
+        }
+
+.FriendLink {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    background: #2d2d3e;
+    padding: 10px;
+}
+
+    .footer .content {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 15px 20px;
+    }
+
+        .footer .content .logo {
+            width: 250px;
+            margin-right: 40px;
+            display: inline-block;
+            /*float: left;
+            position: relative;*/
+        }
+
+        .footer .content .logo2 {
+            width: 140px;
+            margin-right: 10px;
+            display: inline-block;
+            /*float: left;
+            position: relative;*/
+        }
+
+        .footer .content .message {
+            padding: 10px;
+            color: #95a0ae;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+
+        .footer .content .menu {
+            color: #489994;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+            .footer .content .menu .item {
+                float: left;
+                font-size: 12px;
+            }
+
+            .footer .content .menu a {
+                text-decoration: none;
+                color: #489994;
+                display: inline-block;
+                padding: 0px 15px;
+                border-right: #ccc 1px solid;
+            }
+
+        .footer .content .message .info {
+            color: #95a0ae;
+            padding-left: 10px;
+            float: none;
+            font-size: 12px;
+        }
+
+            .footer .content .message .info span {
+                margin-right: 15px;
+            }
+
+        .footer .content .warning {
+            /*padding-top: 40px;
+            padding-bottom: 20px;
+            margin-left: 150px;*/
+            color: #6e6e81;
+            vertical-align: bottom;
+            display: inline-block;
+        }
+
+
+
+.border-right {
+    border-right: 1px solid #7c9094;
+}
+
+.border-left {
+    border-left: 1px solid #7C9094;
+}
+
+.layui-layer-molv .layui-layer-title {
+    text-align: center;
+    padding: 0px;
+}
+
+.layui-layer-dialog .layui-layer-content {
+    color: #333333;
+}
+
+.regBtn {
+    width: 300px;
+    background: #248fbd;
+}
+
+
+.layui-layer-molv .layui-layer-btn a {
+    background: #FFF !important;
+    color: #009f95 !important;
+    width: 40%;
+    font-weight: 700;
+}

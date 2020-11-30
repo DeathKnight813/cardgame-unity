@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7FCAD416-3026-4470-9F0F-915220CA7504}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game.Entity</RootNamespace>
+    <AssemblyName>Game.Entity</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\WebProjects\Game.Web\bin\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.DataVisualization">
+      <HintPath>..\..\..\V5网站\Library\System.Web.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enum\MasterRightStatus.cs" />
+    <Compile Include="Enum\MemberOrderStatus.cs" />
+    <Compile Include="Enum\NoticeLocation.cs" />
+    <Compile Include="Enum\Permission.cs" />
+    <Compile Include="Enum\ServiceArea.cs" />
+    <Compile Include="Enum\SupporTypeStatus.cs" />
+    <Compile Include="Enum\UserRightStatus.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Troy\ezt_connection.cs" />
+    <Compile Include="Troy\ezt_games_config.cs" />
+    <Compile Include="Troy\ezt_members.cs" />
+    <Compile Include="Troy\ezt_members_dayscore.cs" />
+    <Compile Include="Troy\gm_CashBox.cs" />
+    <Compile Include="Troy\Mail.cs" />
+    <Compile Include="Troy\MoneyBack.cs" />
+    <Compile Include="Troy\NewReg.cs" />
+    <Compile Include="Troy\tb_AgentManagers.cs" />
+    <Compile Include="Troy\tb_cashinfo.cs" />
+    <Compile Include="Troy\tb_config.cs" />
+    <Compile Include="Troy\tb_handsel.cs" />
+    <Compile Include="Troy\tb_notice.cs" />
+    <Compile Include="Troy\tb_UserInOutCome.cs" />
+    <Compile Include="Troy\User.cs" />
+    <Compile Include="Troy\UserTicketInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Game.Utils\Game.Utils.csproj">
+      <Project>{3F57A7F2-3A90-43A3-8AE2-81BE3F171CB4}</Project>
+      <Name>Game.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

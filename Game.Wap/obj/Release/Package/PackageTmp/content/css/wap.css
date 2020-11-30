@@ -1,0 +1,612 @@
+﻿/*body {
+    max-width: 375px;
+    margin: 0px auto;
+}*/
+
+
+.radiusBtn {
+    padding: 5px;
+    border: 1px solid #FFF;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    color: #FFF;
+}
+
+.fontleft {
+    text-align: left;
+}
+
+.fontright {
+    text-align: right;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
+
+.homebody {
+}
+
+
+    .homebody .layui-layer-title {
+        border-top-left-radius: 10PX;
+        border-top-right-radius: 10PX;
+        padding: 0px !important;
+        text-align: center !important;
+        font-size: 20px !important;
+    }
+
+    .homebody .layui-layer {
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+    }
+
+    .homebody .layui-layer-content {
+        color: #9A9A9A !important;
+    }
+
+    .homebody .layui-layer-btn0 {
+        width: 50%;
+        background-color: #FFF !important;
+        font-size: 20px !important;
+        color: #11a495 !important;
+    }
+
+    .homebody .layui-layer-btn1 {
+        width: 50%;
+        background-color: #FFF !important;
+        font-size: 20px !important;
+        color: #11a495 !important;
+    }
+
+
+
+.top {
+    background: url(../images/top_bg.jpg) no-repeat;
+    background-size: contain;
+}
+
+.header {
+    padding: 0px 10px;
+    height: 50px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    .header img {
+        max-width: 24px;
+        max-height: 24px;
+    }
+
+    .header .item {
+        height: 30px;
+        padding: 10px 0;
+        display: inline-block;
+    }
+
+        .header .item img {
+            max-width: 160px;
+            max-height: 30px;
+        }
+
+.home_img {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    vertical-align: central;
+}
+
+
+.nav {
+    margin: 0px 15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    background-color: #2E2D3F;
+    color: #FFF;
+}
+
+    .nav .nav-item {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 24px;
+        /*margin: 2px;*/
+        /*padding: 0px 8px;*/
+        width: 19%;
+        border-radius: 25px;
+        -moz-border-radius: 25px;
+    }
+
+        .nav .nav-item a {
+            color: #FFF;
+        }
+
+    .nav .nav-this {
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        background-color: #D1D1D9;
+    }
+
+
+        .nav .nav-this a {
+            color: #2D2D3F;
+        }
+
+.banner {
+    margin: 40px 15px 0px 15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+    .banner img {
+        width: 100%;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+
+.data {
+    /*数据部分*/
+    margin: 10px 15px;
+}
+
+    .data .layui-tab .layui-tab-title {
+        border: 1px solid #16c79d !important;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        color: #16c79e;
+        font-weight: 600;
+        font-size: 16px !important;
+    }
+
+        .data .layui-tab .layui-tab-title li {
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+        }
+
+        .data .layui-tab .layui-tab-title .layui-this {
+            color: #FFF;
+            background-color: #16c79d;
+        }
+
+    .data .layui-tab-brief > .layui-tab-more li.layui-this:after, .data .layui-tab-brief > .layui-tab-title .layui-this:after {
+        border: none;
+    }
+
+    .data .layui-tab-content {
+        margin-top: 5px;
+        padding: 0px !important;
+        border: 1px solid #CCC;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        text-align: center;
+    }
+
+.week {
+    height: 180px;
+    overflow: hidden;
+}
+
+    .week .divUserData {
+        height: 180px;
+    }
+
+.data .title {
+    line-height: 30px;
+    height: 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.data .item {
+    line-height: 30px;
+    height: 30px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #999;
+}
+
+.bgE8 {
+    background-color: #f8f8f8;
+}
+
+.client {
+    margin: 10px 15px;
+}
+
+    .client .client-item {
+        display: inline-block;
+        /*margin: 3px;*/
+        padding: 3px;
+        width: 47%;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+
+        .client .client-item img {
+            /*width: 160px;*/
+            width: 100%;
+        }
+
+.introduce1 {
+    margin: 0px 15px;
+    border-left: 5px solid #00BAA5;
+    padding-left: 10px;
+    color: #8b8b8b;
+    font-size: 18px;
+}
+
+.introduce2 {
+    margin: 10px 0px;
+    background-color: #e7f9f5;
+    padding: 10px 20px;
+    color: #666;
+    height: 80px;
+    overflow: hidden;
+}
+
+.events {
+    height: 80px;
+    overflow: hidden;
+}
+
+
+.introduce2 b {
+    font-size: 16px;
+}
+
+.introduce2 .red {
+    color: #ff2d2d;
+}
+
+
+.footer {
+    text-align: center;
+    vertical-align: middle;
+    color: #666;
+    font-size: 12px;
+    margin-top: 20px 0px;
+}
+
+    .footer .logo {
+        text-align: center;
+        margin: 15px;
+    }
+
+        .footer .logo img {
+            width: 60%;
+        }
+
+    .footer .info {
+        line-height: 20px;
+        margin-bottom: 10px;
+        color: #ccc;
+    }
+
+    .footer .warning {
+        background-color: #E6E6E6;
+        padding: 10px 20px;
+        color: #808080;
+        line-height: 20px;
+    }
+
+    .footer span {
+        padding: 5px 10px;
+        word-break: keep-all;
+    }
+
+
+
+
+.loginbody {
+    color: #7a9295;
+}
+
+    .loginbody .header {
+        height: 40px;
+        line-height: 40px;
+    }
+
+        .loginbody .header a {
+            font-size: 16px;
+            color: #006156;
+        }
+
+    .loginbody .layui-input {
+        border-color: #7a9295 !important;
+    }
+
+    .loginbody .logo {
+        padding: 40px 10px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+        .loginbody .logo img {
+            max-width: 200px;
+            max-height: 120px;
+        }
+
+    .loginbody .layui-form-label {
+        width: 40px !important;
+    }
+
+    .loginbody .layui-input-block {
+        margin-left: 70px !important;
+        margin-right: 25px !important;
+    }
+
+    .loginbody .login-div-button {
+        text-align: center;
+    }
+
+    .loginbody .login-btn1 {
+        background-color: #DBDBDB;
+        color: #686868;
+        font-weight: 900;
+        width: 45%;
+    }
+
+    .loginbody .login-btn2 {
+        background-color: #0FA595;
+        font-weight: 900;
+        width: 45%;
+    }
+
+
+.registerBody {
+}
+
+
+    .registerBody .header {
+        height: 40px;
+        line-height: 40px;
+        background: url(../images/title_bg.jpg) no-repeat;
+        background-size: cover;
+        color: #FFF;
+        font-size: 18px;
+    }
+
+        .registerBody .header a {
+            font-size: 16px;
+            color: #FFF;
+            line-height: 30px;
+        }
+
+    .registerBody .layui-form-item {
+        margin-bottom: 10px;
+    }
+
+    .registerBody .layui-form-label {
+        width: 90px !important;
+        padding: 9px 5px !important;
+        color: #006156;
+    }
+
+    .registerBody .layui-input-block {
+        margin-left: 100px !important;
+        margin-right: 5px !important;
+    }
+
+    .registerBody .layui-input {
+        padding-left: 5px !important;
+    }
+
+
+        .registerBody .layui-input::-webkit-input-placeholder {
+            font-size: 12px;
+        }
+
+        .registerBody .layui-input::-moz-placeholder {
+            font-size: 12px;
+        }
+
+        .registerBody .layui-input:-ms-input-placeholder {
+            font-size: 12px;
+        }
+
+    .registerBody .layui-word-aux {
+        text-align: center;
+    }
+
+
+    .registerBody .login-btn1 {
+        background-color: #0FA595;
+        width: 50%;
+    }
+
+
+.eventBody {
+}
+
+
+    .eventBody .header {
+        height: 40px;
+        line-height: 40px;
+        background: url(../images/title_bg.jpg) no-repeat;
+        background-size: cover;
+        color: #FFF;
+        font-size: 18px;
+    }
+
+.header img {
+    max-width: 24px;
+    max-height: 24px;
+}
+
+
+.eventBody .header a {
+    font-size: 16px;
+    color: #FFF;
+    line-height: 30px;
+}
+
+.eventBody .event-list {
+    margin: 5px 15px;
+}
+
+    .eventBody .event-list .event-nothing {
+        text-align: center;
+        vertical-align: middle;
+        margin: 15px;
+        color: #DBDBDB;
+    }
+
+        .eventBody .event-list .event-nothing img {
+            padding: 30px;
+            max-width: 60%
+        }
+
+    .eventBody .event-list .event-item {
+        line-height: 40px;
+        margin-bottom: 5px;
+        border-bottom: 1px solid #DBDBDB;
+    }
+
+        .eventBody .event-list .event-item .title {
+            color: #262626;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .eventBody .event-list .event-item .time {
+            color: #b2b2b2;
+        }
+
+            .eventBody .event-list .event-item .time img {
+                max-width: 24px;
+                max-height: 24px;
+            }
+
+.eventBody .More {
+    text-align: center;
+    line-height: 40px;
+}
+
+    .eventBody .More img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+
+    .eventBody .More .button {
+        width: 80%;
+        background-color: #fff;
+        color: #11a495;
+        border: 1px solid #11a495;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+    }
+
+
+
+.eventBody .event-detail {
+    text-align: center;
+    background: #F3F4F7;
+    padding: 10px 10px 50px 10px;
+}
+
+    .eventBody .event-detail .title {
+        font-size: 16px;
+        margin: 5px 15px;
+    }
+
+    .eventBody .event-detail .time {
+        color: #b2b2b2;
+        margin: 5px 15px;
+    }
+
+    .eventBody .event-detail .contents {
+        margin: 5px 15px;
+        padding: 5px 15px;
+        background: #fff;
+        color: #333;
+    }
+
+
+.mailBody {
+}
+
+
+
+    .mailBody .header {
+        height: 40px;
+        line-height: 40px;
+        background: url(../images/title_bg.jpg) no-repeat;
+        background-size: cover;
+        color: #FFF;
+        font-size: 18px;
+    }
+
+        .mailBody .header a {
+            font-size: 16px;
+            color: #FFF;
+            line-height: 30px;
+        }
+
+
+    .mailBody .add {
+        background: #F3F4F7;
+        text-align: center;
+        padding: 5px 20px;
+    }
+
+    .mailBody .layui-form-item {
+        margin: 10px 0px 0px 0px !important;
+    }
+
+    .mailBody .layui-form-label {
+        padding: 0 !important;
+    }
+
+    .mailBody .layui-form-mid {
+        padding: 3px 0 !important;
+        color: #11A692;
+    }
+
+    .mailBody .add .title-label {
+        margin: 5px 10px;
+        border-left: 5px solid #11A692;
+        color: #666;
+    }
+
+
+    .mailBody .radiuTop {
+        border-top-left-radius: 10PX;
+        border-top-right-radius: 10PX;
+        border: 1px solid #CCC;
+    }
+
+    .mailBody .radiubottom {
+        border: 1px solid #CCC;
+        border-bottom-left-radius: 10PX;
+        border-bottom-right-radius: 10PX;
+    }
+
+.eventBody .layui-fixbar {
+    border-top-left-radius: 25PX;
+    border-bottom-left-radius: 25PX;
+    background: #11a495;
+    padding: 9px 15px;
+    right: 0px;
+    bottom: 200px;
+}
+
+    .eventBody .layui-fixbar a {
+        color: #fff;
+        font-size: 16px;
+        line-height: 24px;
+        display: inline-block;
+    }
+
+    .eventBody .layui-fixbar img {
+        max-width: 18px;
+        max-height: 18px;
+    }
+
+.mailContent {
+    margin: 10px;
+}

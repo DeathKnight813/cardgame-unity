@@ -1,0 +1,831 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Game.Facade</name>
+    </assembly>
+    <members>
+        <member name="T:Game.Facade.NewTroyFacade">
+            <summary>
+            NewTroy库外观
+            </summary>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.Logon(Game.Entity.Troy.ezt_members,System.Boolean)">
+            <summary>
+            用户登录
+            </summary>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.Logon(System.String,System.String)">
+            <summary>
+            用户登录，登录密码必须是密文。并且验证登录参数
+            </summary>
+            <param name="accounts"></param>
+            <param name="logonPasswd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.Register(Game.Entity.Troy.ezt_members,System.String)">
+            <summary>
+            用户注册
+            </summary>
+            <param name="user"></param>
+            <param name="ShopId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.IsAccountsExist(System.String)">
+            <summary>
+            判断用户名是否存在
+            </summary>
+            <param name="accounts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.IsNickNameExist(System.String)">
+            <summary>
+            判断昵称是否存在
+            </summary>
+            <param name="NickName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetMembersByAccounts(System.String)">
+            <summary>
+            获取会员信息
+            </summary>
+            <param name="Account"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetMembersByUserid(System.Int32)">
+            <summary>
+            获取会员信息
+            </summary>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetUserGlobalInfo(System.Int32,System.String)">
+            <summary>
+            获取用户全局信息
+            </summary>
+            <param name="userID"></param>
+            <param name="Accounts"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetMembersDayScoreByPid(System.Int32)">
+            <summary>
+            获取会员信息
+            </summary>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetMembersOnlineById(System.String)">
+            <summary>
+            获取会员在线信息
+            </summary>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetNoticeList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取公告列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetNoticeByTitle(System.String)">
+            <summary>
+            获取公告信息
+            </summary>
+            <param name="Title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetNoticeByIdx(System.Int32)">
+            <summary>
+            获取公告实体
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetNoticeByType(System.Int32)">
+            <summary>
+            获取公告实体
+            </summary>
+            <param name="noticeID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetOutComeList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取提款列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetDSByAccounts(System.String)">
+            <summary>
+            获取代理信息
+            </summary>
+            <param name="Account"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetOperationTimeByidx(System.Int32)">
+            <summary>
+            获取运营时间信息
+            </summary>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetMailList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取邮件功能列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetMailByidx(System.Int32)">
+            <summary>
+            获取运营时间信息
+            </summary>
+            <param name="idx"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GiveMailToBack(Game.Entity.Troy.Mail)">
+            <summary>
+            给后台写邮件
+            </summary>
+            <param name="user"></param>
+            <param name="ShopId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.AddRequest(System.Decimal,System.Int32,System.String)">
+            <summary>
+            申请充值
+            </summary>
+            <param name="ApplyMoney"></param>
+            <param name="pid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.AddWithDraw(System.Decimal,System.Int32,System.String)">
+            <summary>
+            申请提款
+            </summary>
+            <param name="user"></param>
+            <param name="ShopId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.CountHaveRequest(System.String)">
+            <summary>
+            获取充值个数
+            </summary>
+            <param name="intou"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.CountHaveWithDraw(System.String)">
+            <summary>
+            获取提款个数
+            </summary>
+            <param name="intou"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.CountMailNum(System.String)">
+            <summary>
+            获取收件箱个数
+            </summary>
+            <param name="intou"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.NewTroyFacade.GetMoneyBackList(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            获取假返钱列表
+            </summary>
+            <param name="pageIndex"></param>
+            <param name="pageSize"></param>
+            <param name="condition"></param>
+            <param name="orderby"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Game.Facade.Fetch">
+            <summary>
+            为网站提供全局服务，如：用户Cookie读写等等
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Fetch.StationID">
+            <summary>
+            站点标识
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Fetch.WebRoot">
+            <summary>
+            网站根路径
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Fetch.GetVerifyCode">
+            <summary>
+            获取验证码数值
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.Fetch.GetAccountsByUserID(System.Int32)">
+            <summary>
+            根据用户ID获取用户名
+            </summary>
+            <param name="userID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.Fetch.GetGameID(System.Int32)">
+            <summary>
+            获取ID号码描述，没分配 显示 “尚未分配”
+            </summary>
+            <param name="gameID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.Fetch.GetUserID(System.String)">
+            <summary>
+            获取用户标识
+            </summary>
+            <param name="strUserID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.Fetch.GetStrUserID(System.Int32)">
+            <summary>
+            获取加密后的用户标识
+            </summary>
+            <param name="userID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.Fetch.SetCookie(System.String,System.String)">
+            <summary>
+            写 Cookies
+            </summary>
+            <param name="strName">项</param>
+            <param name="strValue">值</param>
+        </member>
+        <member name="M:Game.Facade.Fetch.SetCookie(System.String,System.Int32)">
+            <summary>
+            写cookie值
+            </summary>
+            <param name="strName">名称</param>
+            <param name="intValue">值</param>
+        </member>
+        <member name="M:Game.Facade.Fetch.GetCookie(System.String)">
+            <summary>
+            获得网站cookie值
+            </summary>
+            <param name="strName">项</param>
+            <returns>值</returns>
+        </member>
+        <member name="M:Game.Facade.Fetch.DeleteCookie(System.String)">
+            <summary>
+            删除 Cookies by Cookie 键值
+            </summary>
+            <param name="cookieName"></param>
+        </member>
+        <member name="M:Game.Facade.Fetch.DeleteSiteCookies">
+            <summary>
+            删除 Cookies
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Fetch.SetUserCookie(Game.Entity.Troy.UserTicketInfo)">
+            <summary>
+            设置用户cookie
+            </summary>
+            <param name="userTicket"></param>
+        </member>
+        <member name="M:Game.Facade.Fetch.GetUserCookie">
+            <summary>
+            获取用户对象
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.Fetch.DeleteUserCookie">
+            <summary>
+            删除用户cookie
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Fetch.IsUserOnline">
+            <summary>
+            用户是否在线 判断用户登录 cookie
+            在线 true 离线 false
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.Fetch.ReWriteUserCookie">
+            <summary>
+            后台登录并重写 Cookie
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Fetch.GetCacheCurrentRunStatus">
+            <summary>
+            获取缓存的使用状况
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:Game.Facade.Fetch.UC_VERIFY_CODE_KEY">
+            <summary>
+            验证码Session键值
+            </summary>
+        </member>
+        <member name="F:Game.Facade.Fetch.DW_PASSWD_ERROR_COUNT">
+            <summary>
+            密码允许错误次数
+            </summary>
+        </member>
+        <member name="T:Game.Facade.Files.HttpFileManager">
+            <summary>
+            文件管理 (Http 方式)
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Files.HttpFileManager.#ctor">
+            <summary>
+            初始化文件管理 (Http 方式)
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Files.HttpFileManager.#ctor(System.String)">
+            <summary>
+            初始化文件管理 (Http 方式)
+            </summary>
+            <param name="p_act">处理选项</param>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFileManager.Value">
+            <summary>
+            处理结果
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFileManager.UploadFilePath">
+            <summary>
+            上传文件路径
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFileManager.Access">
+            <summary>
+            访问权限
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFileManager.FolderCount">
+            <summary>
+            目录数目
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFileManager.FileCount">
+            <summary>
+            文件数目
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Files.HttpFileManager.GetDirectories(System.String,System.String)">
+            <summary>
+            获取目录下所有文件
+            </summary>
+            <param name="folderPath">目录路径</param>
+            <param name="rootPath">根路径</param>
+            <returns>List FileInfo</returns>
+        </member>
+        <member name="M:Game.Facade.Files.HttpFileManager.CreateFolder">
+            <summary>
+            创建目录
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Files.HttpFileManager.DeleteFileFolder">
+            <summary>
+            删除文件, 目录
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Files.HttpFileManager.UploadFile">
+            <summary>
+            上传文件
+            </summary>
+        </member>
+        <member name="T:Game.Facade.Files.FilesComparer">
+            <summary>
+            自定义排序
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Files.FilesComparer.#ctor(System.String)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="sortExpression">要排序的字段</param>
+        </member>
+        <member name="M:Game.Facade.Files.FilesComparer.Compare(Game.Facade.Files.HttpFolderInfo,Game.Facade.Files.HttpFolderInfo)">
+            <summary>
+            实现接口定义的 Compare 方法，比较两个 FolderInfo 对象实例
+            </summary>
+            <param name="a">实体类</param>
+            <param name="b"></param>
+            <returns>实体类</returns>
+        </member>
+        <member name="T:Game.Facade.Files.HttpFolderInfo">
+            <summary>
+            文件夹信息(Http 方式处理文件)
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Files.HttpFolderInfo.#ctor">
+            <summary>
+            构造方法
+            </summary>
+        </member>
+        <member name="M:Game.Facade.Files.HttpFolderInfo.#ctor(System.String,System.String,System.String,System.String,System.Int64,System.String,System.DateTime)">
+            <summary>
+            构造方法
+            </summary>
+            <param name="p_name">文件名</param>
+            <param name="p_fullName">包含完整路径的文件名</param>
+            <param name="p_formatName">处理过的文件名, 含超链接</param>
+            <param name="p_ext">扩展名</param>
+            <param name="p_size">文件大小</param>
+            <param name="p_type">类型</param>
+            <param name="p_modifyDate">修改日期</param>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFolderInfo.Name">
+            <summary>
+            文件名
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFolderInfo.FullName">
+            <summary>
+            包含完整路径的文件名
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFolderInfo.FormatName">
+            <summary>
+            文件名, 含超链接 (已处理)
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFolderInfo.ExtName">
+            <summary>
+            扩展名
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFolderInfo.FormatSize">
+            <summary>
+            文件大小 (已处理)
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFolderInfo.Type">
+            <summary>
+            类型
+            </summary>
+        </member>
+        <member name="P:Game.Facade.Files.HttpFolderInfo.FormatModifyDate">
+            <summary>
+            修改日期 (已处理)
+            </summary>
+        </member>
+        <member name="T:Game.Facade.UCPageBase">
+            <summary>
+            页面基类
+            </summary>
+        </member>
+        <member name="F:Game.Facade.UCPageBase.aideNewTroyFacade">
+            <summary>
+            网站外观
+            </summary>
+        </member>
+        <member name="P:Game.Facade.UCPageBase.IsAuthenticatedUser">
+            <summary>
+            是否验证用户身份
+            </summary>
+        </member>
+        <member name="P:Game.Facade.UCPageBase.IsAuthenticatedMember">
+            <summary>
+            是否验证会员身份
+            </summary>
+        </member>
+        <member name="P:Game.Facade.UCPageBase.ChannelTitle">
+            <summary>
+            设置页面标题
+            </summary>
+        </member>
+        <member name="P:Game.Facade.UCPageBase.IsOnLine">
+            <summary>
+            是否在线 在线 true 离线 false
+            </summary>
+        </member>
+        <member name="F:Game.Facade.UCPageBase.LogonUrl">
+            <summary>
+            个人中心登陆地址
+            </summary>
+        </member>
+        <member name="F:Game.Facade.UCPageBase.RawUrl">
+            <summary>
+            原始请求地址
+            </summary>
+        </member>
+        <member name="F:Game.Facade.UCPageBase.RedirectUrl">
+            <summary>
+            重新定向地址
+            </summary>
+        </member>
+        <member name="F:Game.Facade.UCPageBase.userTicket">
+            <summary>
+            用户基本Cookies信息
+            </summary>
+        </member>
+        <member name="P:Game.Facade.UCPageBase.StationID">
+            <summary>
+            站点标识
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.#ctor">
+            <summary>
+            初始化页面基类
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.OnInit(System.EventArgs)">
+            <summary>
+            初始化并验证用户身份
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.OnLoad(System.EventArgs)">
+            <summary>
+            添加 links 和 javascript 到页面头部 header
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.OnPreRenderComplete(System.EventArgs)">
+            <summary>
+            添加页面标题
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.OnInitLoad">
+            <summary>
+            初始化数据
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddDefaultLanguages">
+            <summary>
+            添加默认的样式语言
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddHeaderTitle">
+            <summary>
+            页头
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddMetaTitle(System.String)">
+            <summary>
+            页头
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddMetaTag(System.String,System.String)">
+            <summary>
+            添加 meta 标签到页面头部
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddMetaTagForHttpEquiv(System.String,System.String)">
+            <summary>
+            添加 meta 标签到页面头部
+            </summary>
+            <param name="httpEquiv"></param>
+            <param name="content"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddGenericLink(System.String,System.String,System.String)">
+            <summary>
+            添加一条常规 link 到页面头部
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddGenericLink(System.String,System.String,System.String,System.String)">
+            <summary>
+            添加常规 link 到页面头部
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddJavaScriptInclude(System.String)">
+            <summary>
+            添加一条 JavaScript 引用到页面头部 head 标签
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddStylesheetInclude(System.String)">
+            <summary>
+            添加样式引用到页面头部 head 标签
+            </summary>
+            <param name="url">相对路径</param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddMetaDescription(System.String)">
+            <summary>
+            添加栏目描述到 meta description 标签
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddMetaKeywords(System.String)">
+            <summary>
+            添加栏目关键词到 meta keywords 标签
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.AddMetaClearCache">
+            <summary>
+            添加缓存清理 Meta
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.Redirect(System.String)">
+            <summary>
+            跳转
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.RedirectAndValidUrl(System.String)">
+            <summary>
+            跳转并添加验证地址
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.RedirectByClient(System.String)">
+            <summary>
+            客户端跳转
+            </summary>
+            <param name="url"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.GetCurrentUser">
+            <summary>
+            获取当前登录用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.GetAccountsByUserID(System.Int32)">
+            <summary>
+            根据用户ID获取账号
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.GetNickNameByUserID(System.Int32)">
+            <summary>
+            根据用户ID获取用户昵称
+            </summary>
+            <param name="userID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.UserLogon">
+            <summary>
+            用户登录
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.ReLogon">
+            <summary>
+            重定向到登录页
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.IsMember">
+            <summary>
+            判断是否会员
+            </summary>
+        </member>
+        <member name="P:Game.Facade.UCPageBase.IsNotice">
+            <summary>
+            加载公告
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.Show(System.String)">
+            <summary>
+            显示消息提示对话框
+            </summary>
+            <param name="msg">提示信息</param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.ShowConfirm(System.Web.UI.WebControls.WebControl,System.String)">
+            <summary>
+            控件点击 消息确认提示框
+            </summary>
+            <param name="Control"></param>
+            <param name="msg"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.ShowAndRedirect(System.String,System.String)">
+            <summary>
+            显示消息提示对话框，并进行页面跳转
+            </summary>
+            <param name="msg"></param>
+            <param name="url"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.RenderAlertInfo(System.Boolean,System.String,System.Int32)">
+            <summary>
+            提示信息
+            </summary>
+            <param name="isError"></param>
+            <param name="alertText"></param>
+            <param name="step"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.RenderAlertInfo2(System.Boolean,System.String)">
+            <summary>
+            提示信息
+            </summary>
+            <param name="isError"></param>
+            <param name="alertText"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.RenderAlertInfo3(System.Boolean,System.String)">
+            <summary>
+            提示信息
+            </summary>
+            <param name="isError"></param>
+            <param name="alertText"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.SwitchStep(System.Int32)">
+            <summary>
+            步骤切换
+            </summary>
+            <param name="moveStep"></param>
+        </member>
+        <member name="F:Game.Facade.UCPageBase.UC_Page_Refresh">
+            <summary>
+            页面刷新令牌
+            </summary>
+        </member>
+        <member name="P:Game.Facade.UCPageBase.IsPageRefresh">
+            <summary>
+            是否刷新
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.SetRefreshServerToken">
+            <summary>
+            更新服务端刷新令牌
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.SetRefreshToken">
+            <summary>
+            设置刷新令牌
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.InitRefreshToken">
+            <summary>
+            初始刷新令牌
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.SetStyle">
+            <summary>
+            统一设置调用的
+            </summary>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.RegJs(System.Web.UI.Page,System.String)">
+            <summary>
+            注册一段脚本包含到页面上
+            </summary>
+            <param name="page"></param>
+            <param name="url"></param>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.CreateGenericControl(System.String,System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            创建一个HtmlGenericControl类型的标签
+            </summary>
+            <param name="tagName">标签名称</param>
+            <param name="dic">属性列表</param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.StrDateDiffDays(System.DateTime)">
+            <summary>
+            给定的日期时间距离现在的天数。
+            </summary>
+            <param name="date">给定的日期时间字符串。</param>       
+            <returns>返回与现在相差的秒数。</returns>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.StrDateDiffHours(System.String,System.Int32)">
+            <summary>
+            给定的日期时间累加上给定的小时数，与现在相差的小时数。
+            </summary>
+            <param name="time">给定的日期时间字符串。</param>
+            <param name="hours">累加的小时数。</param>
+            <returns>返回与现在相差的小时数。</returns>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.StrDateDiffMinutes(System.String,System.Int32)">
+            <summary>
+            给定的日期时间累加上给定的分钟数，与现在相差的分钟数。
+            </summary>
+            <param name="time">给定的日期时间字符串。</param>
+            <param name="minutes">累加的分钟数。</param>
+            <returns>返回与现在相差的分钟数。</returns>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.StrDateDiffSeconds(System.String,System.Int32)">
+            <summary>
+            给定的日期时间累加上给定的秒数，与现在相差的秒数。
+            </summary>
+            <param name="time">给定的日期时间字符串。</param>
+            <param name="sec">累加的秒数。</param>
+            <returns>返回与现在相差的秒数。</returns>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.FormatDateSpan(System.Object)">
+            <summary>
+            把给定的日期格式化为距现在的模糊时间段，比如 1 分钟前
+            </summary>
+            <param name="dateSpan"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.EncryptMD5(System.String,System.Boolean,System.Int32)">
+            <summary>
+            MD5加密函数
+            </summary>
+            <param name="text">需要加密的字符串</param>
+            <param name="isLower">是否小写</param>
+            <param name="bit">16位或32位</param>
+            <returns>密文</returns>
+        </member>
+        <member name="M:Game.Facade.UCPageBase.MailState(System.Int32)">
+            <summary>
+            邮件状态
+            </summary>
+            <param name="state"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

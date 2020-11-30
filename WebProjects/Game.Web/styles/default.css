@@ -1,0 +1,149 @@
+/* Reset */
+* {margin:0; padding:0;}
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {margin:0; padding:0;}
+body, input, textarea, select, button, table {line-height:14px; font-size:11px; font-family:'돋움',Dotum,Helvetica,sans-serif;}
+html, body {height:100%;}
+img, fieldset {border:0;}
+ul, ol {list-style:none;}
+em, address {font-style:normal;}
+a {color:#666; text-decoration:none;}
+a:hover, a:active, a:focus {text-decoration:none;}
+table {border-collapse:collapse;}
+body {_width:100%; _height:100%; background-repeat:repeat-y;}
+button {margin:0; padding:0; border:0; background:none; cursor:pointer;}
+button::-moz-focus-inner {padding: 0 !important; border:0;}
+.blind {visibility:hidden; overflow:hidden; position:absolute; top:0; left:0; width:0; height:0; font-size:0; line-height:0;}
+.show {display:block!important;}
+.hide {display:none!important;}
+caption {display:none;}
+body {background:#eee;}
+
+/* 닉네임 변경(131220) */
+.usr_default span {color:#777;}
+.usr_hp_normal span {padding-right:1px; font-weight:bold; color:#333;}
+.usr_hp_low {color:#fff;}
+.usr_hp_low span {padding-right:1px; font-weight:bold; background-color:#000; color:#fff;}
+.usr_hp_ranker {color:#fff;}
+.usr_hp_ranker span {padding-right:1px; font-weight:bold; background-color:#990099; color:#fff;}
+.ujail {text-decoration:line-through; color:#ff0000;}
+.ujail span { padding-right:1px; color:#000; font-weight:bold;}
+
+/* 사이드뷰 */
+#nameContextMenu {width:110px; text-align:left; z-index:200;}
+#nameContextMenu p.sideview_head {margin:0; height:31px; line-height:31px; border:1px solid #666666; color:#FFFFFF; font-weight:bold; background:#777777; letter-spacing:-1px; font-size:11px; text-indent:10px;}
+#nameContextMenu div.sideview_conts {position:relative; border:1px solid #888; background:#dfdfdf;}
+#nameContextMenu div.sideview_conts .laybgop {position:absolute; left:1px; top:1px; padding:1px 1px; width:100%; height:100%; background:#000; opacity:0.15; filter:alpha(opacity=15); z-index:30;}
+#nameContextMenu div.bg_sideview {background:#e5e5e5;}
+#nameContextMenu table {position:relative; left:0; top:0; width:100%; text-align:left; border-collapse:collapse; background:#dfdfdf; z-index:40;}
+#nameContextMenu td {height:20px;}
+#nameContextMenu td a {display:block; height:20px; border-top:1px solid #c9c9c9; font-size:11px; color:#666;}
+#nameContextMenu td a .inner {display:block; height:19px; border-top:1px solid #dfdfdf; border-left:1px solid #dfdfdf;}
+#nameContextMenu td a:hover {background:#fff;}
+#nameContextMenu td a:hover .inner {border-top:1px solid #e9e9e9; border-left:1px solid #e9e9e9;}
+#nameContextMenu td a .ico {float:left; margin:4px 4px 0 7px; width:10px; height:10px; background:url('http://named.com/img/default/sideview_v2.png') no-repeat;}
+#nameContextMenu td a .txt {float:left; margin-top:2px; height:14px; line-height:14px; font-size:11px; font-family:'돋움',dotum; letter-spacing:-1px; color:#666;}
+#nameContextMenu #sideview_namecard a {border-top:none;}
+#nameContextMenu #sideview_namecard em.ico {background-position:0 -60px;}
+#nameContextMenu #sideview_friend em.ico {background-position:0 -80px;}
+#nameContextMenu #sideview_memo em.ico {background-position:0 0;}
+#nameContextMenu #sideview_sms em.ico {background-position:0 -40px;}
+#nameContextMenu #sideview_email em.ico {background-position:0 -20px;}
+#nameContextMenu #sideview_idsearch em.ico {background-position:-20px 0;}
+#nameContextMenu #sideview_totsearch em.ico {background-position:-20px -20px;}
+#nameContextMenu #sideview_point em.ico {background-position:-20px -60px;}
+#nameContextMenu #sideview_penalty em.ico {background-position:-20px -80px;}
+#nameContextMenu #sideview_adminfo em.ico {background-position:-20px -40px;}
+
+/* 셀렉트박스 */
+#slct-sfl {width:107px;}
+#slct-cmd {width:78px;}
+.selectArea {position:relative; height:24px;}
+.selectArea .option_basic {display:block; height:24px; overflow:hidden; background:url('http://named.com/img/default/sprites.gif') no-repeat;}
+.selectArea .option_basic .txt {float:left; margin:5px 0 0 6px; height:14px; line-height:14px; letter-spacing:-1px; font-size:11px; font-family:'돋움',dotum; color:#666;}
+.selectArea .option_basic .ico {position:absolute; right:0; top:0; display:block; width:23px; height:24px; text-indent:-9000px; background:url('http://named.com/img/default/sprites.gif') no-repeat 0 -30px; z-index:10;}
+.selectOpen .option_basic .ico {background-position:-30px -30px;}
+.selectArea .optionArea {display:none; position:absolute; left:0; top:23px; width:100%; background:#fff; z-index:5;}
+.selectOpen .optionArea {display:block;}
+.selectArea .optionArea ul {padding-bottom:1px; border:1px solid #bcbcbc;}
+.selectArea .optionArea li {margin:1px 1px 0 1px; height:20px;}
+.selectArea .optionArea li a {display:block; height:18px; letter-spacing:-1px; border:1px solid #fff; color:#666; background:#fff;}
+.selectArea .optionArea li a span {display:block; margin:2px 0 0 3px; height:14px; line-height:14px; overflow:hidden; font-size:11px; font-family:'돋움',dotum; color:#666;}
+.selectArea .optionArea li a:hover {border:1px solid #ededed; background:#fafafa; color:#666;}
+.selectArea .optionArea li a:hover span {color:#666;}
+.selectArea .optionArea li.on a {border:1px solid #999; color:#fff; background:#a8a6a6;}
+.selectArea .optionArea li.on a span {color:#fff;}
+
+/* 페이징 */
+.numberic_paging {display:inline-block; margin-top:20px; height:27px;}
+.numberic_paging a {font-size:9px; font-family:tahoma; color:#aaa;}
+.numberic_paging .prev,
+.numberic_paging .next {float:left; margin-left:-1px; width:27px; height:27px; text-indent:-9000px; overflow:hidden; background:url('http://named.com/img/skin/sprites_board_paging_v3.gif') no-repeat;}
+.numberic_paging .prev {margin:0; background-position:-20px 0;}
+.numberic_paging .next {background-position:-50px 0;}
+.numberic_paging .prev em,
+.numberic_paging .next em {margin:9px 0 0 11px; display:block; width:5px; height:9px; background:url('http://named.com/img/skin/sprites_board_paging_v3.gif') no-repeat;}
+.numberic_paging .prev em {background-position:0 0;}
+.numberic_paging .next em {background-position:-10px 0;}
+.numberic_paging a.prev em {background-position:0 -10px;}
+.numberic_paging a.next em {background-position:-10px -10px;}
+.numberic_paging a.prev:hover em {background-position:0 -20px;}
+.numberic_paging a.next:hover em {background-position:-10px -20px;}
+.numberic_paging .numb {float:left; margin-left:-1px; padding-left:10px; height:27px; line-height:27px; font-size:9px; font-family:tahoma; background:url('http://named.com/img/skin/sprites_board_paging_v3.gif') no-repeat -20px -30px;}
+.numberic_paging .numb strong {display:block; padding-right:10px; height:27px; background:url('http://named.com/img/skin/sprites_board_paging_v3.gif') no-repeat right -30px;}
+.numberic_paging a.numb:hover {position:relative; background-position:-20px -60px; z-index:4;}
+.numberic_paging a.numb:hover strong {background-position:right -60px;}
+.numberic_paging span.on {position:relative; background-position:-20px -90px; color:#fff; z-index:5;}
+.numberic_paging span.on strong {background-position:right -90px;}
+.numberic_paging a:hover {color:#797979;}
+.btn_prev_search {display:inline-block; margin-top:20px; width:79px; height:27px; vertical-align:top; text-indent:-9000px; overflow:hidden; background:url('http://www.named.com/img/skin/sprites_board_paging_v3.gif') no-repeat 0 -120px;}
+.btn_next_search {display:inline-block; margin-top:20px; width:79px; height:27px; vertical-align:top; text-indent:-9000px; overflow:hidden; background:url('http://www.named.com/img/skin/sprites_board_paging_v3.gif') no-repeat 0 -160px;}
+
+/* 게시판 페이징 */
+.paging_zone {position:relative; height:64px; text-align:center; z-index:4;}
+.paging_zone_v2 {position:relative; height:64px; text-align:center; z-index:4;}
+.numberic_paging_v2 {display:inline-block; margin-top:20px; height:27px;}
+.numberic_paging_v2 a {font-size:9px; font-family:tahoma; color:#aaa;}
+.numberic_paging_v2 .prev,
+.numberic_paging_v2 .next {float:left; margin-left:-1px; width:27px; height:27px; text-indent:-9000px; overflow:hidden; background:url('http://named.com/img/skin/sprites_board_paging_v3.gif') no-repeat;}
+.numberic_paging_v2 .prev {margin:0; background-position:-20px 0;}
+.numberic_paging_v2 .next {background-position:-50px 0;}
+.numberic_paging_v2 .prev em,
+.numberic_paging_v2 .next em {margin:9px 0 0 11px; display:block; width:5px; height:9px; background:url('http://named.com/img/skin/sprites_board_paging_v3.gif') no-repeat;}
+.numberic_paging_v2 .prev em {background-position:0 0;}
+.numberic_paging_v2 .next em {background-position:-10px 0;}
+.numberic_paging_v2 a.prev em {background-position:0 -10px;}
+.numberic_paging_v2 a.next em {background-position:-10px -10px;}
+.numberic_paging_v2 a.prev:hover em {background-position:0 -20px;}
+.numberic_paging_v2 a.next:hover em {background-position:-10px -20px;}
+.numberic_paging_v2 .numb {float:left; margin-left:-1px; padding-left:10px; height:27px; line-height:27px; font-size:9px; font-family:tahoma; background:url('http://named.com/img/skin/sprites_board_paging_v3.gif') no-repeat -20px -30px;}
+.numberic_paging_v2 .numb strong {display:block; padding-right:10px; height:27px; background:url('http://named.com/img/skin/sprites_board_paging_v3.gif') no-repeat right -30px;}
+.numberic_paging_v2 a.numb:hover {position:relative; background-position:-20px -60px; z-index:4;}
+.numberic_paging_v2 a.numb:hover strong {background-position:right -60px;}
+.numberic_paging_v2 span.on {position:relative; background-position:-20px -90px; color:#fff; z-index:5;}
+.numberic_paging_v2 span.on strong {background-position:right -90px;}
+.numberic_paging_v2 a:hover {color:#797979;}
+.btn_prev_search {display:inline-block; margin-top:20px; width:79px; height:27px; vertical-align:top; text-indent:-9000px; overflow:hidden; background:url('http://www.named.com/img/skin/sprites_board_paging_v3.gif') no-repeat 0 -120px;}
+.btn_next_search {display:inline-block; margin-top:20px; width:79px; height:27px; vertical-align:top; text-indent:-9000px; overflow:hidden; background:url('http://www.named.com/img/skin/sprites_board_paging_v3.gif') no-repeat 0 -160px;}
+
+/* 서브메뉴 (네임드버전) */
+#pageMenu {margin-bottom:10px; height:33px; border:1px solid #999; background-color:#bbb;}
+#pageMenu ul {margin-top:-1px; height:35px;}
+#pageMenu li {float:left; margin-left:-1px; height:33px; border-top:1px solid #999; border-bottom:1px solid #999;}
+#pageMenu li a {display:block; height:33px; border-right:1px solid #aaa; border-left:1px solid #aaa; overflow:hidden;}
+#pageMenu li a span {display:block; height:33px;}
+#pageMenu li a span em.txt {float:left; padding:0 14px; height:33px; line-height:33px; text-align:center; font-size:12px; font-family:'굴림',gulim; color:#333; letter-spacing:-1px;}
+#pageMenu li a span strong.ico_adult {float:left; margin:9px 2px 0 -5px; width:16px; height:15px; background:url('http://named.com/img/default/ico_adult_tab.png?v=131219') no-repeat;}
+#pageMenu li a span strong.ico_new {float:left; margin:9px 2px 0 -5px; width:16px; height:15px; background:url('http://named.com/img/default/ic_new.png') no-repeat;}
+#pageMenu li.over {position:relative; border-top:1px solid #999; border-bottom:1px solid #999; z-index:10;}
+#pageMenu li.over a {border-right:1px solid #999; border-left:1px solid #999; background-color:#b5b5b5;}
+#pageMenu li.over a span em.txt {color:#333;}
+#pageMenu li.on {position:relative; border-top:1px solid #333; border-bottom:1px solid #333; z-index:100;}
+#pageMenu li.on a {border-right:1px solid #333; border-left:1px solid #333; background-color:#555;}
+#pageMenu li.on a span em.txt {color:#fff; font-weight:bold; letter-spacing:-2px;}
+
+
+body {height:auto;}
+#contents {padding-bottom:70px;}
+.xsize {cursor:default;}
+#noPage {height:600px; background:#fff url('http://named.com/img/common/nopage.gif') no-repeat center center;}
+#xSizeImage {position:absolute; padding:3px; border:1px solid #ddd; background:#fff; z-index:1000;}
